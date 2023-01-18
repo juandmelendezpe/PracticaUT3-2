@@ -6,6 +6,7 @@
     --color-texto-header:#fff;
     --color-fondo-footer: #d3d3d3;
     --color-hover-header: #fab30e;
+    --color-redes :#0a8d27;
 
 }
 body{
@@ -15,6 +16,49 @@ body{
     width: 100%;
 }
 #container{
+    width: 100%;
+    height: 80%;
+    color: var(--color-texto-header);
+    position: relative;
     
+}
+#redes{
+    width: 100%;
+    height: 25%;
+    background-color: var(--color-redes);
+    border: 1px solid blue;
+    float: right;
+}
+#cabezal1{
+    width: 20%;
+    float: left;
+}
+#correo{
+    width: 30%;
+    color: var(--color-texto-header);
+    float: left;
+
+
+}
+#cabezal2{
+    width: 20%;
+    float: right;
+}
+#acceso{
+    width: 30%;
+    color: var(--color-texto-header);
+    float: right;
+
+}
+#menu{
+    width: 80%;
+    float: left;
+}
+#menu ul{
+    width: 10px;
+
+}
+#menu ul li{
+text-decoration-line: none;    
 }
 
