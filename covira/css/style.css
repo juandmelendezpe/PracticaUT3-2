@@ -4,9 +4,9 @@
 :root{
     --color-fondo: #151549;
     --color-texto-header:#fff;
-    --color-fondo-footer: #d3d3d3;
-    --color-hover-header: #fab30e;
-    --color-redes :#0a8d27;
+    --color-fondo-footer: #bdbcbc;
+    --color-hover-menu: #468a45;
+    --color-redes :#035715;
 
 }
 body{
@@ -30,8 +30,10 @@ body{
     float: right;
 }
 #cabezal1{
-    width: 20%;
+    width: 5%;
     float: left;
+    padding: 15px;
+    top: 20px ;
 }
 #correo{
     width: 30%;
@@ -41,11 +43,13 @@ body{
 
 }
 #cabezal2{
-    width: 20%;
+    width: 5%;
     float: right;
+    padding: 15px;
+    top: 20px ;
 }
 #acceso{
-    width: 30%;
+    width: 10%;
     color: var(--color-texto-header);
     float: right;
 
@@ -66,13 +70,33 @@ body{
     float: left;
     margin: 15px 5px 10px 15px;
     padding: 5px ;
+    color: var(--color-fondo-footer);
 }
-#menu ul li{
-text-decoration-line: none;  
-display: inline-block;  
-}
-.logo{
-    width: 20%;
+#menu li:hover {
+    background-color: var(--color-hover-menu);
+    color: var(--color-texto-header);
+     border-radius: 3px;
+    }
+    #menu ul li{
+        text-decoration-line: none; 
+        float: left; 
+    }
+    #menu ul ul {
+        display:none;
+        top:100%;
+        left:0;
+        background:#eee;
+        padding:0;
+    }
+    #menu ul ul li {
+        float:none;
+        width:150px
+       }
+    #menu ul li:hover ul {
+        display:block;
+       }
+    .logo{
+     width: 20%;
     height: 15%;
     border:1px solid var(--color-redes) ;
     float: left;
@@ -80,36 +104,47 @@ display: inline-block;
 }
 section{
     width: 100%;
-    height: 35%;
+    height: 25%;
     border: 1px solid red;
+    float: left;
 }
 .banner{
-   width: 100%;
-    height: 30%;
+    background-image: url(../img/coviran-bustamante.png);
+    height: 600px;
     background-size: cover;
+    position: relative;
 
 
 }
+.banner:hover{
+    background-image: url(../img/fanta2.png);
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+    opacity: 10;
+      } 
+      
 #cards1{
     
     text-align: center;
     width: 100%;
-    height: 200px;
-    border: 1px solid rebeccapurple;
+    height: 350px;
 }
 .cards{
     display: inline-block;
-    
+    border: 2px outset;
     width: 25%;
-    height: 90%;
-    margin: 5px;
-    padding: 2px;
+    height: 85%;
+    margin: 7px;
+    padding: 1px;
     border-radius: 10px;
-    border: 1px solid greenyellow;
+    
 }
 .cards img{
     height: 75%;
     width: 100%;
+    border-radius: 10px;
 }
 #menuAbajo{
     width: 100%;
@@ -129,10 +164,14 @@ section{
     margin: 0;
 }
 .menu2 li{
+    width: 20%;
+    height: 15px;
     list-style-type: none;
-    margin: 20px ;
+    margin : 10px ;
     padding: 5px ;
-    color: #d3d3d3;
+    color: #ffffff;
+    border-width: 2px solid var(--color-texto-header);
+    
 
 }
 .menu2 ul li{
@@ -142,22 +181,28 @@ footer{
     width: 100%;
     height: 200px;
     background-color: #143d1d;
+    color: #ffffff;
+    float: left;
 }
 .anuncio{
     width: 100%;
     height: 25%;
     border: 1px solid greenyellow;
+    color: #ffffff;
 
 }
-.marcas{
+.patrocinadores{
     width: 100%;
     height: 50%;
     border: 1px solid greenyellow;
+    color: #ffffff;
+    text-align: center;
 
 }
 .direccion{
     width: 100%;
     height: 25%;
     border: 1px solid greenyellow;
+    color: #ffffff;
 
 }
