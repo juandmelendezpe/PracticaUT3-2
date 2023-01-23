@@ -52,13 +52,112 @@ body{
 }
 #menu{
     width: 80%;
-    float: left;
+    height: 15%;
+    float: right;
+    border: 1px solid var(--color-fondo);
+    text-align: center;
 }
-#menu ul{
-    width: 10px;
-
+#menu ul, #menu li {
+    padding: 0;
+    margin: 0;
+}
+#menu li{
+    list-style-type: none;
+    float: left;
+    margin: 15px 5px 10px 15px;
+    padding: 5px ;
 }
 #menu ul li{
-text-decoration-line: none;    
+text-decoration-line: none;  
+display: inline-block;  
+}
+.logo{
+    width: 20%;
+    height: 15%;
+    border:1px solid var(--color-redes) ;
+    float: left;
+    
+}
+section{
+    width: 100%;
+    height: 35%;
+    border: 1px solid red;
+}
+.banner{
+   width: 100%;
+    height: 30%;
+    background-size: cover;
+
+
+}
+#cards1{
+    
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    border: 1px solid rebeccapurple;
+}
+.cards{
+    display: inline-block;
+    
+    width: 25%;
+    height: 90%;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+}
+.cards img{
+    height: 75%;
+    width: 100%;
+}
+#menuAbajo{
+    width: 100%;
+    height: 50px;
+    background-color: #248d3b;
+    
 }
 
+.menu2{
+    width: 100%;
+    height: 100%;
+    float: right;
+    text-align: center;
+}
+.menu2 ul, .menu2 li {
+    padding: 0;
+    margin: 0;
+}
+.menu2 li{
+    list-style-type: none;
+    margin: 20px ;
+    padding: 5px ;
+    color: #d3d3d3;
+
+}
+.menu2 ul li{
+display: inline-block;  
+}
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #143d1d;
+}
+.anuncio{
+    width: 100%;
+    height: 25%;
+    border: 1px solid greenyellow;
+
+}
+.marcas{
+    width: 100%;
+    height: 50%;
+    border: 1px solid greenyellow;
+
+}
+.direccion{
+    width: 100%;
+    height: 25%;
+    border: 1px solid greenyellow;
+
+}
