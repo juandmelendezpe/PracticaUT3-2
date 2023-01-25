@@ -22,44 +22,48 @@ body{
     position: relative;
     
 }
-#redes{
+#cabezal1{
     width: 100%;
     height: 25%;
     background-color: var(--color-redes);
     border: 1px solid blue;
     float: right;
 }
-#cabezal1{
-    width: 5%;
+#idioma_logo{
+    width: 8%;
     float: left;
     padding: 15px;
     top: 20px ;
 }
-#correo{
+#redes_logo{
+    width: 8%;
+    float: right;
+    padding: 15px;
+    top: 20px ;
+    text-align: end;
+}
+#correo_atc{
     width: 30%;
     color: var(--color-texto-header);
     float: left;
-
+   
 
 }
-#cabezal2{
-    width: 5%;
-    float: right;
-    padding: 15px;
-    top: 20px ;
+#correo_atc a{
+color: var(--color-texto-header);
 }
-#acceso{
+#acceso_privado{
     width: 10%;
     color: var(--color-texto-header);
     float: right;
-
+    
 }
 #menu{
     width: 80%;
     height: 15%;
     float: right;
-    border: 1px solid var(--color-fondo);
     text-align: center;
+    position: relative;
 }
 #menu ul, #menu li {
     padding: 0;
@@ -76,25 +80,29 @@ body{
     background-color: var(--color-hover-menu);
     color: var(--color-texto-header);
      border-radius: 3px;
+    
+
     }
-    #menu ul li{
+    #menu nav ul li{
         text-decoration-line: none; 
         float: left; 
     }
-    #menu ul ul {
+    #menu  ul ul {
         display:none;
         top:100%;
         left:0;
         background:#eee;
         padding:0;
     }
-    #menu ul ul li {
+    #menu  ul ul li {
         float:none;
-        width:150px
+        width:150px; 
+        z-index: 3;  
        }
-    #menu ul li:hover ul {
+    #menu  ul li:hover ul {
         display:block;
-       }
+        
+    }
     .logo{
      width: 20%;
     height: 15%;
@@ -110,19 +118,16 @@ section{
 }
 .banner{
     background-image: url(../img/coviran-bustamante.png);
-    height: 600px;
+   
+    height: 500px;
     background-size: cover;
     position: relative;
 
 
 }
 .banner:hover{
-    background-image: url(../img/fanta2.png);
-    opacity: 0;
-    position: absolute;
-    left: 0;
-    transition: opacity 1.5s ease-in-out;
-    opacity: 10;
+   
+    
       } 
       
 #cards1{
